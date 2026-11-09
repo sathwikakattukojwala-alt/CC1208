@@ -1,17 +1,49 @@
+
+<!DOCTYPE html>
 <html>
 <head>
-<title>static website<title>
+    <title> Static Web Page</title>
 </head>
 <body>
-<h1>STATIC WEB APPLICATION</h1>
-<h3>Registration form</h3>
-<form method="post" action="#">
-<a href src="#">CSE</a>
-<a href src="#">IT</a>
-Name:<input type="text" name="name">
-Roll number:<input type="text" name="roll">
-Phone number:<input type="tele" name="phone">
-<button>Submit</button>
-</form>
+    <header>
+        <h1>My HTML Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About This Project</h2>
+            <p>This is a completely raw HTML document. </p>
+        </section>        
+        <section id="contact">
+            <p>Fill out the additional information:</p>
+            
+            <form action="#" method="POST">
+                <p>
+                    <label for="username">Full Name:</label><br>
+                    <input type="text" id="username" name="username" required>
+                </p>
+                <p>
+                    <label for="useremail">Email Address:</label><br>
+                    <input type="email" id="useremail" name="useremail" required>
+                </p>
+                <p>
+                    <label for="usermessage">Message Details:</label><br>
+                    <textarea id="usermessage" name="usermessage" rows="4" cols="40" required></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Submit Form">
+                    <input type="reset" value="Clear Form Entries">
+                </p>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
 </body>
 </html>
